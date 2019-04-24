@@ -5,16 +5,18 @@ function analysis(data){
     var end_obj3 = []; 
     var end_obj4 = [];
     var end_obj5 = [];
+    var end_obj6 = [];
     var end_obj = []; 
     var cl = data.compute.length;
     var stl = data.storage.length;
     var swl =  data.switchs.length;
     var data_length=data.database.length;
     var cpzl_length=data.cpzl.length;
+    var sjk_length=data.sujuku.length;
 
     //compute节点
     for(var i = 0; i < data.compute.length; i++){
-        var obj1 = {name:'',obj_id:'',x:0,y:0,symbol:'',status:'',symbolSize: [30,30]};//compute
+        var obj1 = {name:'',obj_id:'',x:0,y:0,symbol:'',status:'',symbolSize: [40,40]};//compute
         obj1.name = data.compute[i].name;
         obj1.obj_id = data.compute[i].id;
         obj1.value = data.compute[i].type;
@@ -89,7 +91,7 @@ function analysis(data){
 
     //switch节点
     for(var k = 0; k <data.switchs.length; k++){
-        var obj3 = {name:'',x:0,y:100,symbol:'',symbolSize: [30,30]};
+        var obj3 = {name:'',x:0,y:100,symbol:'',symbolSize: [40,40]};
         obj3.name = data.switchs[k].name;
 
              // obj3.x = 166*(k+1);
@@ -115,7 +117,7 @@ function analysis(data){
 
     //database节点
     for(var k = 0; k <data.database.length; k++){
-        var obj4 = {name:'',x:0,y:200,symbol:'',symbolSize: [30,30]};
+        var obj4 = {name:'',x:0,y:200,symbol:'',symbolSize: [40,40]};
         obj4.name = data.database[k].name;
         if(end_obj3.length == 0){
             obj4.x = 50*(k+1);
@@ -144,7 +146,7 @@ function analysis(data){
     };
     //storage节点
     for(var j = 0; j < data.storage.length; j++){
-        var obj2 = {name:'',obj_id:'',x:0,y:300,symbol:'',status:'',symbolSize: [30,30]};//storage
+        var obj2 = {name:'',obj_id:'',x:0,y:300,symbol:'',status:'',symbolSize: [40,40]};//storage
         obj2.name = data.storage[j].name;
         obj2.obj_id = data.storage[j].id;
         obj2.value = data.storage[j].type;
@@ -169,13 +171,13 @@ function analysis(data){
     };
 //磁盘阵列
     for(var j = 0; j < data.cpzl.length; j++){
-        var obj5 = {name:'',obj_id:'',x:0,y:400,symbol:'',status:'',symbolSize: [30,30]};//storage
+        var obj5 = {name:'',obj_id:'',x:0,y:500,symbol:'',status:'',symbolSize: [40,40]};//storage
         obj5.name = data.cpzl[j].name;
         obj5.obj_id = data.cpzl[j].id;
         obj5.value = data.cpzl[j].type;
         // obj2.x = 150*(j+1);
         if(cpzl_length == 1){
-            cpzl_length.x = 1200/2-(113/2);
+            obj5.x = 1200/2-(113/2);
         }else{
             obj5.x = 1200/(cpzl_length+1)*(j+1)-(60/2);
 
@@ -192,9 +194,34 @@ function analysis(data){
         }
         end_obj5.push(obj5);
     };
+    //数据库
+    for(var j = 0; j < data.sujuku.length; j++){
+        var obj6 = {name:'',obj_id:'',x:0,y:400,symbol:'',status:'',symbolSize: [40,40]};//storage
+        obj6.name = data.sujuku[j].name;
+        obj6.obj_id = data.sujuku[j].id;
+        obj6.value = data.sujuku[j].type;
+        // obj2.x = 150*(j+1);
+        if(sjk_length == 1){
+            obj6.x = 1200/2-(113/2);
+        }else{
+            obj6.x = 1200/(sjk_length+1)*(j+1)-(60/2);
+
+        }
+
+        obj6.status = data.sujuku[j].status;
+        if(obj6.status == 1){
+            obj6.symbol = 'image://images/image002.JPG';
+        }
+        else if (obj6.status == 2) {
+            obj6.symbol = 'image://images/image002.JPG';
+        }else if (obj5.status == 3) {
+            obj6.symbol = 'image://images/image002.JPG';
+        }
+        end_obj6.push(obj6);
+    };
 
     //在push上面几个数组的时候，要将data.storage的节点数组放在data.compute之前,为什么还是清楚
-     end_obj.push(end_obj4,mix_compute_attr,end_obj3,end_obj2,end_obj5);
+     end_obj.push(end_obj4,mix_compute_attr,end_obj3,end_obj2,end_obj5,end_obj6);
     var attr = [];
     for(var b = 0; b <end_obj.length; b++){
         for(var c = 0; c<end_obj[b].length; c++){

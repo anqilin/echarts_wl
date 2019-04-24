@@ -61,16 +61,7 @@
       "target": "测试50"
     },
 
-    {
-      "flow": 1,
-      "source": "负载均衡1",
-      "target": "数据库主节点"
-    },
-    {
-      "flow": 1,
-      "source": "负载均衡1",
-      "target": "数据库备节点"
-    },
+
     {
       "flow": 1,
       "source": "负载均衡1",
@@ -119,16 +110,7 @@
       "target": "测试50"
     },
 
-    {
-      "flow": 1,
-      "source": "负载均衡2",
-      "target": "数据库主节点"
-    },
-    {
-      "flow": 1,
-      "source": "负载均衡2",
-      "target": "数据库备节点"
-    },
+
     {
       "flow": 1,
       "source": "负载均衡2",
@@ -153,7 +135,61 @@
       "flow": 1,
       "source": "数据库备节点",
       "target": "磁盘阵列2"
+    },
+
+    {
+      "flow": 1,
+      "source": "公交APP21",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "公交APP22",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "公交APP33",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "公交APP34",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "公交APP35",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "测试50",
+      "target": "数据库主节点"
+    },
+
+
+    {
+      "flow": 1,
+      "source": "轮渡APP71",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "轮渡APP72",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "测试36",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "数据库主节点",
+      "target": "数据库备节点"
     }
+
 
 
   ],
@@ -182,14 +218,7 @@
       "name": "测试50",
       "status": 1
     },
-    {
-      "name": "数据库主节点",
-      "status": 2
-    },
-    {
-      "name": "数据库备节点",
-      "status": 2
-    },
+
     {
       "name": "轮渡APP71",
       "status": 3
@@ -231,6 +260,16 @@
     },
     {
       "name": "磁盘阵列2",
+      "status": 1
+    }
+  ],
+  "sujuku": [
+    {
+      "name": "数据库主节点",
+      "status": 1
+    },
+    {
+      "name": "数据库备节点",
       "status": 1
     }
   ]
