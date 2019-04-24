@@ -1,0 +1,144 @@
+{ 
+    "compute": [  
+                {  "name": "网上充系统","status":1},
+                {  "name": "支付网关系统","status":1},
+                {  "name": "手机App系统","status":1},
+                {  "name": "网上查询系统","status":1},
+                {  "name": "二维码系统","status":1},
+                {  "name": "交通卡网站","status":1},
+                {  "name": "ETC客服系统","status":2},
+                {  "name": "ETC自助网站系统","status":2},
+                {  "name": "旅游卡商户对账客户端系统","status":3},
+                {  "name": "旅游卡官网","status":3}
+    ],  
+    "links": [  
+                {"flow": 1, "source": "数据审计系统", "target": "数据审计数据库1"},
+                {"flow": 5, "source": "中央清算系统（线下）", "target": "历史数据库"},
+                {"flow": 6, "source": "中央清算系统（线下）", "target": "清算数据库-清算"},
+                {"flow": 9, "source": "坏卡核销系统", "target": "清算数据库-清算"},
+                {"flow": 12, "source": "清算报表管理系统", "target": "清算数据库-清算"},
+                {"flow": 87, "source": "网上充系统", "target": "清算数据库-网上充"},
+                {"flow": 78, "source": "物流系统", "target": "清算数据库-物流"},
+                {"flow": 123, "source": "财务系统", "target": "清算数据库-财务"},
+                {"flow": 96, "source": "客服系统", "target": "清算数据库-客服"},
+
+      {"flow": 1, "source": "电子发票系统", "target": "清算数据库-电子发票"},
+      {"flow": 5, "source": "ERP系统（一期）", "target": "清算数据库-ERP"},
+      {"flow": 6, "source": "司售卡发卡系统", "target": "清算数据库-司售卡发卡"},
+      {"flow": 9, "source": "中央清算系统（线上）", "target": "清算在线数据库"},
+      {"flow": 12, "source": "交通卡发卡系统", "target": "交通卡发卡数据库"},
+      {"flow": 87, "source": "地铁前置系统", "target": "地铁前置数据库"},
+      {"flow": 78, "source": "交通部清算系统（原型）", "target": "交通部原型系统数据库"},
+      {"flow": 123, "source": "公交无线采集系统", "target": "公交无线采集生产数据库-公交"},
+      {"flow": 96, "source": "消费无线采集系统", "target": "公交无线采集生产数据库-统一"},
+
+      {"flow": 1, "source": "网上查询系统", "target": "综合查询平台数据库"},
+      {"flow": 5, "source": "CA发行系统", "target": "CA发行数据库"},
+      {"flow": 6, "source": "老物流系统", "target": "老物流数据库"},
+      {"flow": 9, "source": "数据仓库系统", "target": "数据仓库数据库"},
+      {"flow": 12, "source": "二维码系统", "target": "二维码数据库"},
+      {"flow": 87, "source": "ETC客服系统", "target": "ETC（生产）数据库"},
+      {"flow": 78, "source": "ETC客服系统", "target": "ETC历史库"},
+      {"flow": 123, "source": "ETC一次发行系统", "target": "ETC（生产）数据库"},
+      {"flow": 96, "source": "ETC清结算系统", "target": "ETC（生产）数据库"},
+
+      {"flow": 1, "source": "ETC交易认证系统", "target": "ETC（生产）数据库"},
+      {"flow": 5, "source": "ETC全国联网系统", "target": "ETC（生产）数据库"},
+      {"flow": 6, "source": "ETC营改增映射系统", "target": "ETC（生产）数据库"},
+      {"flow": 9, "source": "ETC清算报表系统", "target": "ETC（生产）数据库"},
+      {"flow": 12, "source": "ETC自助网站系统", "target": "ETC网站库"},
+      {"flow": 87, "source": "旅游卡商户对账客户端系统", "target": "旅游卡（生产）数据库"},
+      {"flow": 78, "source": "旅游卡商户对账服务端系统", "target": "旅游卡（生产）数据库"},
+      {"flow": 123, "source": "旅游卡圈存账户系统", "target": "旅游卡（生产）数据库"},
+      {"flow": 96, "source": "旅游卡综合业务系统", "target": "旅游卡（生产）数据库"},
+
+      {"flow": 1, "source": "旅游卡圈存WEB接入系统", "target": "旅游卡（生产）数据库"},
+      {"flow": 5, "source": "旅游卡备付金系统", "target": "旅游卡（生产）数据库"},
+      {"flow": 6, "source": "旅游卡监管信息上报系统", "target": "旅游卡（生产）数据库"},
+      {"flow": 9, "source": "旅游卡反洗钱系统", "target": "旅游卡（生产）数据库"},
+      {"flow": 12, "source": "旅游卡物流系统", "target": "旅游卡（生产）数据库"},
+      {"flow": 87, "source": "旅游卡发卡系统", "target": "旅游卡（生产）数据库"},
+      {"flow": 78, "source": "旅游卡官网", "target": "旅游卡官网数据库"}
+
+
+    ],   
+    "storage": [  
+                {"name": "中央清算系统（线下）","status":1},
+                {"name": "中央清算系统（线上）","status":1},
+                {"name": "交通部清算系统（原型）","status":1},
+      {"name": "密钥管理系统","status":1},
+      {"name": "ETC清结算系统","status":2},
+      {"name": "旅游卡圈存账户系统","status":3}
+
+    ],   
+    "switchs": [  
+                {"name": "数据审计系统","status":1},
+                {"name": "坏卡核销系统","status":1},
+                {"name": "清算报表管理系统","status":1},
+                {"name": "物流系统","status":1},
+                {"name": "财务系统","status":1},
+                {"name": "客服系统","status":1},
+      {"name": "电子发票系统","status":1},
+      {"name": "ERP系统（一期）","status":1},
+      {"name": "司售卡发卡系统","status":1},
+      {"name": "交通卡发卡系统","status":1},
+      {"name": "地铁前置系统","status":1},
+      {"name": "公交无线采集系统","status":1},
+
+      {"name": "消费无线采集系统","status":1},
+      {"name": "CA发行系统","status":1},
+      {"name": "老物流系统","status":1},
+      {"name": "数据仓库系统","status":1},
+      {"name": "IVR与短信系统","status":1},
+      {"name": "ETC一次发行系统","status":2},
+      {"name": "ETC交易认证系统","status":2},
+      {"name": "ETC全国联网系统","status":2},
+      {"name": "ETC营改增映射系统","status":2},
+      {"name": "ETC清算报表系统","status":2},
+      {"name": "旅游卡商户对账服务端系统","status":3},
+      {"name": "旅游卡综合业务系统","status":3},
+
+      {"name": "旅游卡圈存WEB接入系统","status":3},
+      {"name": "旅游卡备付金系统","status":3},
+      {"name": "旅游卡监管信息上报系统","status":3},
+      {"name": "旅游卡反洗钱系统","status":3},
+      {"name": "旅游卡物流系统","status":3},
+      {"name": "旅游卡发卡系统","status":3}
+
+
+    ],
+
+  "database": [
+    {"name": "数据审计数据库1","status":1},
+    {"name": "历史数据库","status":1},
+    {"name": "清算数据库-清算","status":1},
+    {"name": "清算数据库-网上充","status":1},
+    {"name": "清算数据库-物流","status":1},
+    {"name": "清算数据库-财务","status":1},
+    {"name": "清算数据库-客服","status":1},
+    {"name": "清算数据库-电子发票","status":1},
+    {"name": "清算数据库-ERP","status":1},
+    {"name": "清算数据库-司售卡发卡","status":1},
+    {"name": "清算在线数据库","status":1},
+    {"name": "交通卡发卡数据库","status":1},
+
+    {"name": "地铁前置数据库","status":1},
+    {"name": "交通部原型系统数据库","status":1},
+    {"name": "公交无线采集生产数据库-公交","status":1},
+    {"name": "公交无线采集生产数据库-统一","status":1},
+    {"name": "综合查询平台数据库","status":1},
+    {"name": "CA发行数据库","status":1},
+    {"name": "老物流数据库","status":1},
+    {"name": "数据仓库数据库","status":1},
+    {"name": "二维码数据库","status":1},
+    {"name": "ETC（生产）数据库","status":2},
+    {"name": "ETC历史库","status":2},
+    {"name": "ETC网站库","status":2},
+
+    {"name": "旅游卡（生产）数据库","status":3},
+    {"name": "旅游卡官网数据库","status":3}
+
+
+  ]
+
+}  
