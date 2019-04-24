@@ -4,44 +4,46 @@ function analysis(data){
     var end_obj2 = []; 
     var end_obj3 = []; 
     var end_obj4 = [];
+    var end_obj5 = [];
     var end_obj = []; 
     var cl = data.compute.length;
     var stl = data.storage.length;
     var swl =  data.switchs.length;
     var data_length=data.database.length;
+    var cpzl_length=data.cpzl.length;
 
     //compute节点
     for(var i = 0; i < data.compute.length; i++){
-        var obj1 = {name:'',obj_id:'',x:50,y:0,symbol:'',status:'',symbolSize: [20,20]};//compute
+        var obj1 = {name:'',obj_id:'',x:0,y:0,symbol:'',status:'',symbolSize: [30,30]};//compute
         obj1.name = data.compute[i].name;
         obj1.obj_id = data.compute[i].id;
         obj1.value = data.compute[i].type;
         if(data.storage.length == 0){
-             obj1.y = 50*(i+1);
+             obj1.x = 50*(i+1);
         }else{
             // obj1.x = 133*(i+1);
             if(cl == 1){
-                obj1.y = 2000/2-(113/2);
+                obj1.x = 1200/2-(113/2);
             }else{
-                obj1.y = 2000/(cl+1)*(i+1)-(60/2);
+                obj1.x = 1200/(cl+1)*(i+1)-(60/2);
 
             }
             
         }
         obj1.status = data.compute[i].status;
         if(obj1.status == 1){
-             obj1.symbol = 'image://images/A1.png';
+             obj1.symbol = 'image://images/image_fhq.jpg';
         }
        else if (obj1.status == 2) {
-            obj1.symbol = 'image://images/C1.png';
+            obj1.symbol = 'image://images/image_fhq.jpg';
         }else if (obj1.status == 3) {
-            obj1.symbol = 'image://images/B1.png';
+            obj1.symbol = 'image://images/image_fhq.jpg';
         }
         end_obj1.push(obj1);    
     };
     var compute_last_x = 0;
     if(data.compute.length > 0){    
-     compute_last_x = end_obj1[end_obj1.length-1].y;
+     compute_last_x = end_obj1[end_obj1.length-1].x;
     }else{
        compute_last_x = 0; 
     }
@@ -84,91 +86,115 @@ function analysis(data){
         }
     }
 
-    //storage节点
-    for(var j = 0; j < data.storage.length; j++){
-        var obj2 = {name:'',obj_id:'',x:700,y:0,symbol:'',status:'',symbolSize: [20,20]};//storage
-        obj2.name = data.storage[j].name;
-        obj2.obj_id = data.storage[j].id;
-        obj2.value = data.storage[j].type;
-        // obj2.x = 150*(j+1);
-        if(stl == 1){
-                obj2.y = 2000/2-(113/2);
-            }else{
-                obj2.y = 2000/(stl+1)*(j+1)-(60/2);
 
-            }
-      
-        obj2.status = data.storage[j].status;
-         if(obj2.status == 1){
-             obj2.symbol = 'image://images/A3.png';
-        }
-       else if (obj2.status == 2) {
-         obj2.symbol = 'image://images/C3.png';
-       }else if (obj2.status == 3) {
-             obj2.symbol = 'image://images/B3.png';
-         }
-        end_obj2.push(obj2);
-    };
     //switch节点
     for(var k = 0; k <data.switchs.length; k++){
-        var obj3 = {name:'',x:300,y:0,symbol:'',symbolSize: [20,20]};
+        var obj3 = {name:'',x:0,y:100,symbol:'',symbolSize: [30,30]};
         obj3.name = data.switchs[k].name;
-         if(end_obj2.length == 0){
-            obj3.y = 50*(k+1);
-           obj3.x = 200;
-         }else{
+
              // obj3.x = 166*(k+1);
              if(swl == 1){
-                obj3.y = 2000/2-(113/2);
+                obj3.x = 1200/2-(113/2);
             }else{
-                obj3.y = 2000/(swl+1)*(k+1)-(20/2);
+                obj3.x = 1200/(swl+1)*(k+1)-(20/2);
 
             }
              
-             obj3.x = 400;
-         }
+             obj3.y = 100;
+
         obj3.status=data.switchs[k].status;
          if(obj3.status==1){
-             obj3.symbol = 'image://images/A2.png';
+             obj3.symbol = 'image://images/image_hub.jpg';
          }else if (obj3.status==2){
-             obj3.symbol = 'image://images/C2.png';
+             obj3.symbol = 'image://images/image_hub.jpg';
          }else if(obj3.status==3){
-             obj3.symbol = 'image://images/B2.png';
+             obj3.symbol = 'image://images/image_hub.jpg';
          }
         end_obj3.push(obj3);
     };
 
     //database节点
     for(var k = 0; k <data.database.length; k++){
-        var obj4 = {name:'',x:900,y:0,symbol:'',symbolSize: [20,20]};
+        var obj4 = {name:'',x:0,y:200,symbol:'',symbolSize: [30,30]};
         obj4.name = data.database[k].name;
         if(end_obj3.length == 0){
-            obj4.y = 50*(k+1);
-            obj4.x = 700;
+            obj4.x = 50*(k+1);
+            obj4.y = 700;
         }else{
             // obj3.x = 166*(k+1);
             if(swl == 1){
-                obj4.y = 2000/2-(113/2);
+                obj4.x = 1200/2-(113/2);
             }else{
-                obj4.y = 2000/(swl+1)*(k+1)-(20/2);
+                obj4.x = 1200/(swl+1)*(k+1)-(20/2);
 
             }
 
-            obj4.x = 1100;
+            obj4.y = 200;
         }
         obj4.status=data.database[k].status;
         if(obj4.status==1){
-            obj4.symbol = 'image://images/deta.png';
+            obj4.symbol = 'image://images/img_junhen.jpg';
         }else if (obj4.status==2){
-            obj4.symbol = 'image://images/deta.png';
+            obj4.symbol = 'image://images/img_junhen.jpg';
         }else if(obj4.status==3){
-            obj4.symbol = 'image://images/deta.png';
+            obj4.symbol = 'image://images/img_junhen.jpg';
         }
 
         end_obj4.push(obj4);
     };
+    //storage节点
+    for(var j = 0; j < data.storage.length; j++){
+        var obj2 = {name:'',obj_id:'',x:0,y:300,symbol:'',status:'',symbolSize: [30,30]};//storage
+        obj2.name = data.storage[j].name;
+        obj2.obj_id = data.storage[j].id;
+        obj2.value = data.storage[j].type;
+        // obj2.x = 150*(j+1);
+        if(stl == 1){
+            obj2.x = 1200/2-(113/2);
+        }else{
+            obj2.x = 1200/(stl+1)*(j+1)-(60/2);
+
+        }
+
+        obj2.status = data.storage[j].status;
+        if(obj2.status == 1){
+            obj2.symbol = 'image://images/image001.JPG';
+        }
+        else if (obj2.status == 2) {
+            obj2.symbol = 'image://images/image002.JPG';
+        }else if (obj2.status == 3) {
+            obj2.symbol = 'image://images/image003.JPG';
+        }
+        end_obj2.push(obj2);
+    };
+//磁盘阵列
+    for(var j = 0; j < data.cpzl.length; j++){
+        var obj5 = {name:'',obj_id:'',x:0,y:400,symbol:'',status:'',symbolSize: [30,30]};//storage
+        obj5.name = data.cpzl[j].name;
+        obj5.obj_id = data.cpzl[j].id;
+        obj5.value = data.cpzl[j].type;
+        // obj2.x = 150*(j+1);
+        if(cpzl_length == 1){
+            cpzl_length.x = 1200/2-(113/2);
+        }else{
+            obj5.x = 1200/(cpzl_length+1)*(j+1)-(60/2);
+
+        }
+
+        obj5.status = data.cpzl[j].status;
+        if(obj5.status == 1){
+            obj5.symbol = 'image://images/image_cpzl.jpg';
+        }
+        else if (obj5.status == 2) {
+            obj5.symbol = 'image://images/image_cpzl.jpg';
+        }else if (obj5.status == 3) {
+            obj5.symbol = 'image://images/image_cpzl.jpg';
+        }
+        end_obj5.push(obj5);
+    };
+
     //在push上面几个数组的时候，要将data.storage的节点数组放在data.compute之前,为什么还是清楚
-     end_obj.push(end_obj2,mix_compute_attr,end_obj3,end_obj4);
+     end_obj.push(end_obj4,mix_compute_attr,end_obj3,end_obj2,end_obj5);
     var attr = [];
     for(var b = 0; b <end_obj.length; b++){
         for(var c = 0; c<end_obj[b].length; c++){
@@ -228,7 +254,7 @@ $(document).ready(function () {
                     label: {
                         normal: {
                             show: true,
-                            position: 'right',
+                            position: 'bottom',
                            // backgroundColor:'#f4f6fa',
 
                             textStyle:{
@@ -247,7 +273,7 @@ $(document).ready(function () {
                            // opacity: 0.6,
                             //type: 'dashed',
                             width: 1,
-                            curveness: 0.2,
+                            curveness: 0.1,
                             color: '#a8b2cb' ,
                         },
                         emphasis: {
