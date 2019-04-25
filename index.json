@@ -1,23 +1,24 @@
 {
   "compute": [
     {
-      "name": "外部防火墙1",
-      "status": 1
+      "name": "防火墙1",
+      "status": 1,
+      "msg":"报错了"
     },
     {
-      "name": "外部防火墙2",
+      "name": "防火墙2",
       "status": 1
     }
   ],
   "links": [
     {
       "flow": 1,
-      "source": "外部防火墙1",
+      "source": "防火墙1",
       "target": "Hub1"
     },
     {
       "flow": 1,
-      "source": "外部防火墙2",
+      "source": "防火墙2",
       "target": "Hub2"
     },
     {
@@ -196,41 +197,51 @@
   "storage": [
     {
       "name": "公交APP21",
-      "status": 1
+      "status": 1,
+      "kind":1
     },
     {
       "name": "公交APP22",
-      "status": 1
+      "status": 1,
+      "kind":1
     },
     {
       "name": "公交APP33",
-      "status": 1
+      "status": 1,
+      "kind":1
     },
     {
       "name": "公交APP34",
-      "status": 1
+      "status": 0,
+      "kind":1,
+      "msg": "服务器168.10.6.34的二维码计费请求返回与对账报文接收消息队列堆积"
     },
     {
       "name": "公交APP35",
-      "status": 1
+      "status": 1,
+      "kind":1
     },
     {
       "name": "测试50",
-      "status": 1
+      "status": 1,
+      "kind":1
     },
 
     {
       "name": "轮渡APP71",
-      "status": 3
+      "status": 1,
+      "kind":3
     },
     {
       "name": "轮渡APP72",
-      "status": 3
+      "status": 1,
+      "kind":3
     },
 
     {
       "name": "测试36",
-      "status": 3
+      "status": 1,
+      "kind":3
     }
   ],
   "switchs": [

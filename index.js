@@ -16,10 +16,11 @@ function analysis(data){
 
     //compute节点
     for(var i = 0; i < data.compute.length; i++){
-        var obj1 = {name:'',obj_id:'',x:0,y:0,symbol:'',status:'',symbolSize: [40,40]};//compute
+        var obj1 = {name:'',obj_id:'',x:0,y:0,symbol:'',status:'',symbolSize: [50,50]};//compute
         obj1.name = data.compute[i].name;
         obj1.obj_id = data.compute[i].id;
         obj1.value = data.compute[i].type;
+        obj1.msg=data.compute[i].msg;
         if(data.storage.length == 0){
              obj1.x = 50*(i+1);
         }else{
@@ -27,19 +28,17 @@ function analysis(data){
             if(cl == 1){
                 obj1.x = 1200/2-(113/2);
             }else{
-                obj1.x = 1200/(cl+1)*(i+1)-(60/2);
+                obj1.x = 1200/(cl+1)*(i+1)-(20/2);
 
             }
             
         }
         obj1.status = data.compute[i].status;
         if(obj1.status == 1){
-             obj1.symbol = 'image://images/image_fhq.jpg';
+             obj1.symbol = 'image://images/image_fhq_1.png';
         }
-       else if (obj1.status == 2) {
-            obj1.symbol = 'image://images/image_fhq.jpg';
-        }else if (obj1.status == 3) {
-            obj1.symbol = 'image://images/image_fhq.jpg';
+       else if (obj1.status == 0) {
+            obj1.symbol = 'image://images/image_fhq_2.png';
         }
         end_obj1.push(obj1);    
     };
@@ -91,7 +90,7 @@ function analysis(data){
 
     //switch节点
     for(var k = 0; k <data.switchs.length; k++){
-        var obj3 = {name:'',x:0,y:100,symbol:'',symbolSize: [40,40]};
+        var obj3 = {name:'',x:0,y:100,symbol:'',symbolSize: [50,50]};
         obj3.name = data.switchs[k].name;
 
              // obj3.x = 166*(k+1);
@@ -106,18 +105,16 @@ function analysis(data){
 
         obj3.status=data.switchs[k].status;
          if(obj3.status==1){
-             obj3.symbol = 'image://images/image_hub.jpg';
-         }else if (obj3.status==2){
-             obj3.symbol = 'image://images/image_hub.jpg';
-         }else if(obj3.status==3){
-             obj3.symbol = 'image://images/image_hub.jpg';
+             obj3.symbol = 'image://images/image_hub_1.png';
+         }else if (obj3.status==0){
+             obj3.symbol = 'image://images/image_hub_2.png';
          }
         end_obj3.push(obj3);
     };
 
     //database节点
     for(var k = 0; k <data.database.length; k++){
-        var obj4 = {name:'',x:0,y:200,symbol:'',symbolSize: [40,40]};
+        var obj4 = {name:'',x:0,y:200,symbol:'',symbolSize: [50,50]};
         obj4.name = data.database[k].name;
         if(end_obj3.length == 0){
             obj4.x = 50*(k+1);
@@ -135,21 +132,20 @@ function analysis(data){
         }
         obj4.status=data.database[k].status;
         if(obj4.status==1){
-            obj4.symbol = 'image://images/img_junhen.jpg';
-        }else if (obj4.status==2){
-            obj4.symbol = 'image://images/img_junhen.jpg';
-        }else if(obj4.status==3){
-            obj4.symbol = 'image://images/img_junhen.jpg';
+            obj4.symbol = 'image://images/img_junhen_1.png';
+        }else if (obj4.status==0){
+            obj4.symbol = 'image://images/img_junhen_2.png';
         }
 
         end_obj4.push(obj4);
     };
     //storage节点
     for(var j = 0; j < data.storage.length; j++){
-        var obj2 = {name:'',obj_id:'',x:0,y:300,symbol:'',status:'',symbolSize: [40,40]};//storage
+        var obj2 = {name:'',obj_id:'',x:0,y:300,symbol:'',status:'',symbolSize: [50,50]};//storage
         obj2.name = data.storage[j].name;
         obj2.obj_id = data.storage[j].id;
         obj2.value = data.storage[j].type;
+        obj2.msg=data.storage[j].msg;
         // obj2.x = 150*(j+1);
         if(stl == 1){
             obj2.x = 1200/2-(113/2);
@@ -157,21 +153,29 @@ function analysis(data){
             obj2.x = 1200/(stl+1)*(j+1)-(60/2);
 
         }
+        obj2.status=data.storage[j].status;
+        obj2.kind = data.storage[j].kind;
+        if(obj2.kind == 1){
+            if(obj2.status == 1){
+                obj2.symbol = 'image://images/image001_1.png';
+            }else if(obj2.status == 0){
+                obj2.symbol = 'image://images/image001_2.png';
 
-        obj2.status = data.storage[j].status;
-        if(obj2.status == 1){
-            obj2.symbol = 'image://images/image001.JPG';
-        }
-        else if (obj2.status == 2) {
-            obj2.symbol = 'image://images/image002.JPG';
-        }else if (obj2.status == 3) {
-            obj2.symbol = 'image://images/image003.JPG';
+            }
+
+        }else if (obj2.kind == 3) {
+            if(obj2.status == 1){
+                obj2.symbol = 'image://images/image003_1.png';
+            }else if(obj2.status == 0){
+                obj2.symbol = 'image://images/image003_2.png';
+
+            }
         }
         end_obj2.push(obj2);
     };
 //磁盘阵列
     for(var j = 0; j < data.cpzl.length; j++){
-        var obj5 = {name:'',obj_id:'',x:0,y:500,symbol:'',status:'',symbolSize: [40,40]};//storage
+        var obj5 = {name:'',obj_id:'',x:0,y:500,symbol:'',status:'',symbolSize: [68,34]};//storage
         obj5.name = data.cpzl[j].name;
         obj5.obj_id = data.cpzl[j].id;
         obj5.value = data.cpzl[j].type;
@@ -185,18 +189,16 @@ function analysis(data){
 
         obj5.status = data.cpzl[j].status;
         if(obj5.status == 1){
-            obj5.symbol = 'image://images/image_cpzl.jpg';
+            obj5.symbol = 'image://images/image_cpzl_1.png';
         }
-        else if (obj5.status == 2) {
-            obj5.symbol = 'image://images/image_cpzl.jpg';
-        }else if (obj5.status == 3) {
-            obj5.symbol = 'image://images/image_cpzl.jpg';
+        else if (obj5.status == 0) {
+            obj5.symbol = 'image://images/image_cpzl_2.png';
         }
         end_obj5.push(obj5);
     };
     //数据库
     for(var j = 0; j < data.sujuku.length; j++){
-        var obj6 = {name:'',obj_id:'',x:0,y:400,symbol:'',status:'',symbolSize: [40,40]};//storage
+        var obj6 = {name:'',obj_id:'',x:0,y:400,symbol:'',status:'',symbolSize: [50,50]};//storage
         obj6.name = data.sujuku[j].name;
         obj6.obj_id = data.sujuku[j].id;
         obj6.value = data.sujuku[j].type;
@@ -210,12 +212,10 @@ function analysis(data){
 
         obj6.status = data.sujuku[j].status;
         if(obj6.status == 1){
-            obj6.symbol = 'image://images/image002.JPG';
+            obj6.symbol = 'image://images/image002_1.png';
         }
-        else if (obj6.status == 2) {
-            obj6.symbol = 'image://images/image002.JPG';
-        }else if (obj5.status == 3) {
-            obj6.symbol = 'image://images/image002.JPG';
+        else if (obj6.status == 0) {
+            obj6.symbol = 'image://images/image002_2.png';
         }
         end_obj6.push(obj6);
     };
@@ -260,6 +260,9 @@ $(document).ready(function () {
                         return params.data.source + '到' + params.data.target;
                     }
                     else{
+                        if(params.data.msg!=null && params.data.status===0){
+                            return params.name+ " "+params.data.msg;
+                        }
 
                         return params.name;
                     }
@@ -285,23 +288,24 @@ $(document).ready(function () {
                            // backgroundColor:'#f4f6fa',
 
                             textStyle:{
-                                fontSize:12,
-                                 color:'#666666',
+                                fontSize:15,
+                                color:'#666666',
+                                fontWeight:"bold",
                             }
                         },
 
 
                     },
                     edgeSymbol: ['arrow', 'arrow'],
-                    edgeSymbolSize: [12, 12],
+                    edgeSymbolSize: [8, 8],
                     constantSpeed: 30,
                     lineStyle: {
                         normal: {
                            // opacity: 0.6,
                             //type: 'dashed',
-                            width: 1,
+                            width: 1.5,
                             curveness: 0.1,
-                            color: '#a8b2cb' ,
+                            color: '#77829c' ,
                         },
                         emphasis: {
                             color: '#ff4c61'
