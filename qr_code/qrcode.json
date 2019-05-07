@@ -1,0 +1,263 @@
+{
+  "compute": [
+    {
+      "name": "防火墙",
+      "status": 1,
+      "msg":"报错了"
+    }
+
+  ],
+  "links": [
+    {
+      "flow": 1,
+      "source": "防火墙1",
+      "target": "Hub1"
+    }
+
+
+
+
+  ],
+  "storage": [
+    {
+      "name": "144",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "145",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "146",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "147",
+      "status": 1,
+      "kind":3,
+      "msg": "服务器168.10.6.34的二维码计费请求返回与对账报文接收消息队列堆积"
+    },
+    {
+      "name": "148",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "149",
+      "status": 1,
+      "kind":3
+    },
+
+    {
+      "name": "150",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "151",
+      "status": 1,
+      "kind":3
+    },
+
+    {
+      "name": "152",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "131",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "135",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "137",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "138",
+      "status": 1,
+      "kind":3,
+      "msg": "服务器168.10.6.34的二维码计费请求返回与对账报文接收消息队列堆积"
+    },
+    {
+      "name": "139",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "140",
+      "status": 1,
+      "kind":3
+    },
+
+    {
+      "name": "141",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "142",
+      "status": 1,
+      "kind":3
+    },
+
+    {
+      "name": "143",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "120",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "121",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "122",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "123",
+      "status": 1,
+      "kind":3,
+      "msg": "服务器168.10.6.34的二维码计费请求返回与对账报文接收消息队列堆积"
+    },
+    {
+      "name": "124",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "125",
+      "status": 1,
+      "kind":3
+    },
+
+    {
+      "name": "126",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "128",
+      "status": 1,
+      "kind":3
+    },
+
+    {
+      "name": "129",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "127",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "136",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "130",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "153",
+      "status": 1,
+      "kind":3,
+      "msg": "服务器168.10.6.34的二维码计费请求返回与对账报文接收消息队列堆积"
+    },
+    {
+      "name": "154",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "156",
+      "status": 1,
+      "kind":3
+    },
+
+    {
+      "name": "157",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "158",
+      "status": 1,
+      "kind":3
+    },
+
+    {
+      "name": "159",
+      "status": 1,
+      "kind":3
+    }
+  ],
+  "switchs": [
+    {
+      "name": "Hub1",
+      "status": 1
+    },
+    {
+      "name": "Hub2",
+      "status": 1
+    }
+  ],
+  "database": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "cpzl": [
+    {
+      "name": "磁盘阵列1",
+      "status": 1
+    },
+    {
+      "name": "磁盘阵列2",
+      "status": 1
+    }
+  ],
+  "outfhq": [
+    {
+      "name": "外部防火墙1",
+      "status": 1
+    },
+    {
+      "name": "外部防火墙2",
+      "status": 1
+    },
+    {
+      "name": "外部防火墙3",
+      "status": 1
+    },
+    {
+      "name": "外部防火墙4",
+      "status": 1
+    }
+  ]
+}
