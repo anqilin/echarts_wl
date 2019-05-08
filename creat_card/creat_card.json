@@ -1,0 +1,81 @@
+{
+  "compute": [
+    {
+      "name": "接入交换机",
+      "status": 1,
+      "msg":"报错了"
+    }
+
+  ],
+  "links": [
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "发卡App148"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "发卡App149"
+    },
+    {
+      "flow": 1,
+      "source": "发卡App148",
+      "target": "发卡数据库"
+    },
+    {
+      "flow": 1,
+      "source": "发卡App149",
+      "target": "发卡数据库"
+    }
+
+  ],
+  "storage": [
+    {
+      "name": "发卡App148",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "发卡App149",
+      "status": 1,
+      "kind":1
+    }
+
+
+  ],
+  "switchs": [
+    {
+      "name": "Hub1",
+      "status": 1
+    },
+    {
+      "name": "Hub2",
+      "status": 1
+    }
+  ],
+  "database": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "cpzl": [
+    {
+      "name": "综合查询对账&二维码磁盘阵列",
+      "status": 1
+    }
+
+  ],
+  "sujuku": [
+    {
+      "name": "发卡数据库",
+      "status": 1
+    }
+
+  ]
+}
