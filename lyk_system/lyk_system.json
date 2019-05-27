@@ -1,0 +1,424 @@
+{
+  "compute": [
+    {
+      "name": "防火墙1",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "防火墙2",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "接入交换机",
+      "status": 1,
+      "msg":"报错了"
+    }
+
+
+  ],
+  "links": [
+    {
+      "flow": 1,
+      "source": "防火墙1",
+      "target": "WEB1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙1",
+      "target": "WEB2"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙1",
+      "target": "查询21"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙1",
+      "target": "U8 web91"
+    },
+
+    {
+      "flow": 1,
+      "source": "防火墙2",
+      "target": "WEB1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙2",
+      "target": "WEB2"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙2",
+      "target": "查询21"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙2",
+      "target": "U8 web91"
+    },
+    {
+      "flow": 1,
+      "source": "WEB1",
+      "target": "二级防火墙1"
+    },
+    {
+      "flow": 1,
+      "source": "WEB2",
+      "target": "二级防火墙1"
+    },
+    {
+      "flow": 1,
+      "source": "查询21",
+      "target": "二级防火墙1"
+    },
+    {
+      "flow": 1,
+      "source": "U8 web91",
+      "target": "二级防火墙1"
+    },
+
+    {
+      "flow": 1,
+      "source": "WEB1",
+      "target": "二级防火墙2"
+    },
+    {
+      "flow": 1,
+      "source": "WEB2",
+      "target": "二级防火墙2"
+    },
+    {
+      "flow": 1,
+      "source": "查询21",
+      "target": "二级防火墙2"
+    },
+    {
+      "flow": 1,
+      "source": "U8 web91",
+      "target": "二级防火墙2"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "二级防火墙3"
+    },
+    {
+      "flow": 1,
+      "source": "二级防火墙1",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "二级防火墙2",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "二级防火墙3",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "二级防火墙1",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "二级防火墙2",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "二级防火墙3",
+      "target": "负载均衡2"
+    },
+
+
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "应用主节点"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "应用备节点"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "APP23"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "APP22"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "文件服务器"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "旅游卡物流"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "管理"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "U8 app"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "监控"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "旅游卡加密机"
+    },
+
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "应用主节点"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "应用备节点"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "APP23"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "APP22"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "文件服务器"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "旅游卡物流"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "管理"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "U8 app"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "监控"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "旅游卡加密机"
+    },
+
+    {
+      "flow": 1,
+      "source": "应用主节点",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "应用备节点",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "APP23",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "APP22",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "文件服务器",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "旅游卡物流",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "管理",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "U8 app",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "监控",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "旅游卡加密机",
+      "target": "数据库主节点"
+    },
+    {
+      "flow": 1,
+      "source": "数据库主节点",
+      "target": "数据库备节点"
+    },
+    {
+      "flow": 1,
+      "source": "数据库主节点",
+      "target": "旅游卡磁盘阵列"
+    }
+
+  ],
+  "storage": [
+    {
+      "name": "WEB1",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "WEB2",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "查询21",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "U8 web91",
+      "status": 1,
+      "kind":3
+    }
+
+
+  ],
+  "switchs": [
+    {
+      "name": "二级防火墙1",
+      "status": 1
+    },
+    {
+      "name": "二级防火墙2",
+      "status": 1
+    },
+    {
+      "name": "二级防火墙3",
+      "status": 1
+    }
+  ],
+  "database": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "cpzl": [
+    {
+      "name": "旅游卡磁盘阵列",
+      "status": 1
+    }
+
+  ],
+  "sujuku": [
+    {
+      "name": "数据库主节点",
+      "status": 1
+    },
+    {
+      "name": "数据库备节点",
+      "status": 1
+    }
+
+  ],
+  "point": [
+    {
+      "name": "应用主节点",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "应用备节点",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "APP23",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "APP22",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "文件服务器",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "旅游卡物流",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "管理",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "U8 app",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "监控",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "旅游卡加密机",
+      "status": 1,
+      "kind":1
+    }
+
+  ]
+}

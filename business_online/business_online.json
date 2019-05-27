@@ -1,0 +1,645 @@
+{
+  "compute": [
+    {
+      "name": "防火墙",
+      "status": 1,
+      "msg":"报错了"
+    }
+
+  ],
+  "links": [
+    {
+      "flow": 1,
+      "source": "防火墙",
+      "target": "节点"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "网上充11"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "网上充181"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "网上充182"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "183"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "支付网关&CVM13"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "备份支付网关&CVM161"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "支付网关&CVM185"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "支付网关&CVM186"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "支付网关&CVM195"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "支付网关&CVM196"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "手机APP162"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "手机APP171"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "手机APP172"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "手机APP201"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "手机APP202"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "手机APP211"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "手机APP212"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "电子发票214"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "网上查询173"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "网上查询203"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "网上对账174"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "网上对账204"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "支付宝164"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "支付宝184"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "监控194"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "交通部原型28"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "综合测试90"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "综合测试91"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "测试163"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "测试203"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "测试187"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "测试197"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "Maven Repository"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "网上充测试14"
+    },
+
+
+
+    {
+      "flow": 1,
+      "source": "网上充11",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "网上充181",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "网上充182",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "183",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "支付网关&CVM13",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "备份支付网关&CVM161",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "支付网关&CVM185",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "支付网关&CVM186",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "支付网关&CVM195",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "支付网关&CVM196",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "手机APP162",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "手机APP171",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "手机APP172",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "手机APP201",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "手机APP202",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "手机APP211",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "手机APP212",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "电子发票214",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "网上查询173",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "网上查询203",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "网上对账174",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "网上对账204",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "支付宝164",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "支付宝184",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "监控194",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "交通部原型28",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "综合测试90",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "综合测试91",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "测试163",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "测试203",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "测试187",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "测试197",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "Maven Repository",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "网上充测试14",
+      "target": "节点2"
+    },
+
+
+    {
+      "flow": 1,
+      "source": "节点2",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "节点2",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "外部防火墙1"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "外部防火墙2"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "外部防火墙3"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "外部防火墙4"
+    },
+
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "外部防火墙1"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "外部防火墙2"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "外部防火墙3"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "外部防火墙4"
+    }
+
+
+
+
+
+
+
+
+  ],
+  "storage": [
+    {
+      "name": "网上充11",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "网上充181",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "网上充182",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "183",
+      "status": 1,
+      "kind":3,
+      "msg": ""
+    },
+    {
+      "name": "支付网关&CVM13",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "备份支付网关&CVM161",
+      "status": 1,
+      "kind":3
+    },
+
+    {
+      "name": "支付网关&CVM185",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "支付网关&CVM186",
+      "status": 1,
+      "kind":3
+    },
+
+    {
+      "name": "支付网关&CVM195",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "支付网关&CVM196",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "手机APP162",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "手机APP171",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "手机APP172",
+      "status": 1,
+      "kind":3,
+      "msg": ""
+    },
+    {
+      "name": "手机APP201",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "手机APP202",
+      "status": 1,
+      "kind":3
+    },
+
+    {
+      "name": "手机APP211",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "手机APP212",
+      "status": 1,
+      "kind":3
+    },
+
+    {
+      "name": "电子发票214",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "网上查询173",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "网上查询203",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "网上对账174",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "网上对账204",
+      "status": 1,
+      "kind":3,
+      "msg": "服务器168.10.6.34的二维码计费请求返回与对账报文接收消息队列堆积"
+    },
+    {
+      "name": "支付宝164",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "支付宝184",
+      "status": 1,
+      "kind":3
+    },
+
+    {
+      "name": "监控194",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "交通部原型28",
+      "status": 1,
+      "kind":1
+    },
+
+    {
+      "name": "综合测试90",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "综合测试91",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "测试163",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "测试203",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "测试187",
+      "status": 1,
+      "kind":3,
+      "msg": "服务器168.10.6.34的二维码计费请求返回与对账报文接收消息队列堆积"
+    },
+    {
+      "name": "测试197",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "Maven Repository",
+      "status": 1,
+      "kind":3
+    },
+
+    {
+      "name": "网上充测试14",
+      "status": 1,
+      "kind":3
+    }
+  ],
+  "switchs": [
+    {
+      "name": "节点",
+      "status": 1
+    }
+
+  ],
+  "database": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "cpzl": [
+    {
+      "name": "节点2",
+      "status": 1
+    }
+  ],
+  "outfhq": [
+    {
+      "name": "外部防火墙1",
+      "status": 1
+    },
+    {
+      "name": "外部防火墙2",
+      "status": 1
+    },
+    {
+      "name": "外部防火墙3",
+      "status": 1
+    },
+    {
+      "name": "外部防火墙4",
+      "status": 1
+    }
+  ]
+}

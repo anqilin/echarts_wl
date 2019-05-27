@@ -1,0 +1,118 @@
+{
+  "compute": [
+    {
+      "name": "防火墙",
+      "status": 1,
+      "msg":"报错了"
+    }
+
+
+  ],
+  "links": [
+    {
+      "flow": 1,
+      "source": "防火墙",
+      "target": "接入交换机"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "灾备APP11"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "灾备APP12"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "灾备APP21"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "灾备APP22"
+    },
+    {
+      "flow": 1,
+      "source": "灾备APP11",
+      "target": "灾备数据库"
+    },
+    {
+      "flow": 1,
+      "source": "灾备APP12",
+      "target": "灾备数据库"
+    },
+    {
+      "flow": 1,
+      "source": "灾备APP21",
+      "target": "灾备数据库"
+    },
+    {
+      "flow": 1,
+      "source": "灾备APP22",
+      "target": "灾备数据库"
+    },
+    {
+      "flow": 1,
+      "source": "灾备数据库",
+      "target": "旅游卡灾备磁盘"
+    }
+
+  ],
+  "storage": [
+    {
+      "name": "灾备APP11",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "灾备APP12",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "灾备APP21",
+      "status": 1,
+      "kind":3
+    },
+    {
+      "name": "灾备APP22",
+      "status": 1,
+      "kind":3
+    }
+
+
+  ],
+  "switchs": [
+    {
+      "name": "接入交换机",
+      "status": 1
+    }
+  ],
+  "database": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "cpzl": [
+    {
+      "name": "旅游卡灾备磁盘",
+      "status": 1
+    }
+
+  ],
+  "sujuku": [
+    {
+      "name": "灾备数据库",
+      "status": 1
+    }
+
+  ]
+}

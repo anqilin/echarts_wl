@@ -1,0 +1,461 @@
+{
+  "compute": [
+    {
+      "name": "防火墙1",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "防火墙2",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "防火墙3",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "防火墙4",
+      "status": 1,
+      "msg":"报错了"
+    }
+
+
+  ],
+  "links": [
+    {
+      "flow": 1,
+      "source": "防火墙1",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙1",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙2",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙2",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙3",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙3",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙4",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙4",
+      "target": "负载均衡2"
+    },
+
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "APP11"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "APP12"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "APP13"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "APP14"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "APP15"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "APP16"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "APP17"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "APP18"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "APP19"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "APP20"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "APP21"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "APP22"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "管理31"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "管理32"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "管理35"
+    },
+
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "APP11"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "APP12"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "APP13"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "APP14"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "APP15"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "APP16"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "APP17"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "APP18"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "APP19"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "APP20"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "APP21"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "APP22"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "管理31"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "管理32"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "管理35"
+    },
+
+    {
+      "flow": 1,
+      "source": "APP11",
+      "target": "节点"
+    },
+    {
+      "flow": 1,
+      "source": "APP12",
+      "target": "节点"
+    },
+    {
+      "flow": 1,
+      "source": "APP13",
+      "target": "节点"
+    },
+    {
+      "flow": 1,
+      "source": "APP14",
+      "target": "节点"
+    },
+    {
+      "flow": 1,
+      "source": "APP15",
+      "target": "节点"
+    },
+    {
+      "flow": 1,
+      "source": "APP16",
+      "target": "节点"
+    },
+    {
+      "flow": 1,
+      "source": "APP17",
+      "target": "节点"
+    },
+    {
+      "flow": 1,
+      "source": "APP18",
+      "target": "节点"
+    },
+    {
+      "flow": 1,
+      "source": "APP19",
+      "target": "节点"
+    },
+    {
+      "flow": 1,
+      "source": "APP20",
+      "target": "节点"
+    },
+    {
+      "flow": 1,
+      "source": "APP21",
+      "target": "节点"
+    },
+    {
+      "flow": 1,
+      "source": "APP22",
+      "target": "节点"
+    },
+
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "数据库(主节点)"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "数据库(备节点)"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "应用(主节点)"
+    },
+    {
+      "flow": 1,
+      "source": "节点",
+      "target": "应用(备节点)"
+    },
+
+    {
+      "flow": 1,
+      "source": "数据库(主节点)",
+      "target": "网约车生产数据库磁盘阵列"
+    },
+    {
+      "flow": 1,
+      "source": "数据库(备节点)",
+      "target": "网约车备份数据库磁盘阵列"
+    },
+    {
+      "flow": 1,
+      "source": "数据库(主节点)",
+      "target": "磁带库"
+    },
+    {
+      "flow": 1,
+      "source": "数据库(备节点)",
+      "target": "磁带库"
+    }
+
+
+
+
+
+
+  ],
+  "storage": [
+    {
+      "name": "APP11",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "APP12",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "APP13",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "APP14",
+      "status": 1,
+      "kind":1
+    },
+
+    {
+      "name": "APP15",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "APP16",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "APP17",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "APP18",
+      "status": 1,
+      "kind":1
+    },
+
+    {
+      "name": "APP19",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "APP20",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "APP21",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "APP22",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "管理31",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "管理32",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "管理35",
+      "status": 1,
+      "kind":1
+    }
+
+
+  ],
+  "switchs": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "database": [
+    {
+      "name": "节点",
+      "status": 1
+    }
+  ],
+  "cpzl": [
+    {
+      "name": "网约车生产数据库磁盘阵列",
+      "status": 1
+    },
+    {
+      "name": "网约车备份数据库磁盘阵列",
+      "status": 1
+    },
+    {
+      "name": "磁带库",
+      "status": 1
+    }
+
+  ],
+  "sujuku": [
+    {
+      "name": "数据库(主节点)",
+      "status": 1
+    },
+    {
+      "name": "数据库(备节点)",
+      "status": 1
+    },
+
+    {
+      "name": "应用(主节点)",
+      "status": 1
+    },
+    {
+      "name": "应用(备节点)",
+      "status": 1
+    }
+
+  ]
+}

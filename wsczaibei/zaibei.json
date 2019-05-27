@@ -1,0 +1,83 @@
+{
+  "compute": [
+    {
+      "name": "防火墙",
+      "status": 1,
+      "msg":"报错了"
+    }
+
+
+  ],
+  "links": [
+    {
+      "flow": 1,
+      "source": "防火墙",
+      "target": "灾备APP1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙",
+      "target": "灾备APP2"
+    },
+    {
+      "flow": 1,
+      "source": "灾备APP1",
+      "target": "外部防火墙"
+    },
+    {
+      "flow": 1,
+      "source": "灾备APP2",
+      "target": "外部防火墙"
+    }
+
+
+  ],
+  "storage": [
+    {
+      "name": "灾备APP1",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "灾备APP2",
+      "status": 1,
+      "kind":1
+    }
+
+
+  ],
+  "switchs": [
+    {
+      "name": "外部防火墙",
+      "status": 1
+    }
+  ],
+  "database": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "cpzl": [
+    {
+      "name": "清算灾备磁盘阵列",
+      "status": 1
+    }
+
+  ],
+  "sujuku": [
+    {
+      "name": "灾备数据库(主节点)",
+      "status": 1
+    },
+    {
+      "name": "灾备数据库(备节点)",
+      "status": 1
+    }
+
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "compute": [
+    {
+      "name": "接入交换机1",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "接入交换机2",
+      "status": 1,
+      "msg":"报错了"
+    }
+
+
+  ],
+  "links": [
+    {
+      "flow": 1,
+      "source": "接入交换机1",
+      "target": "网上充加密机61"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机1",
+      "target": "网上充加密机62"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机1",
+      "target": "网上充加密机63"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机1",
+      "target": "网上充加密机64"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机1",
+      "target": "消费加密机221"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机1",
+      "target": "消费加密机230"
+    },
+
+    {
+      "flow": 1,
+      "source": "接入交换机2",
+      "target": "接入点"
+    },
+    {
+      "flow": 1,
+      "source": "接入点",
+      "target": "发卡加密机200"
+    },
+    {
+      "flow": 1,
+      "source": "接入点",
+      "target": "发卡加密机201"
+    },
+    {
+      "flow": 1,
+      "source": "接入点",
+      "target": "发卡加密机202"
+    },
+    {
+      "flow": 1,
+      "source": "接入点",
+      "target": "发卡加密机203"
+    },
+
+    {
+      "flow": 1,
+      "source": "接入点",
+      "target": "清算加密机222"
+    },
+    {
+      "flow": 1,
+      "source": "接入点",
+      "target": "清算加密机223"
+    },
+    {
+      "flow": 1,
+      "source": "接入点",
+      "target": "清算加密机224"
+    },
+    {
+      "flow": 1,
+      "source": "接入点",
+      "target": "清算加密机225"
+    },
+    {
+      "flow": 1,
+      "source": "接入点",
+      "target": "二维码加密机226"
+    },
+    {
+      "flow": 1,
+      "source": "接入点",
+      "target": "二维码加密机228"
+    },
+    {
+      "flow": 1,
+      "source": "接入点",
+      "target": "消费加密机229"
+    },
+    {
+      "flow": 1,
+      "source": "接入点",
+      "target": "清算加密机231"
+    },
+    {
+      "flow": 1,
+      "source": "接入点",
+      "target": "住建部互联互通加密机56"
+    }
+
+  ],
+  "storage": [
+    {
+      "name": "网上充加密机61",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "网上充加密机62",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "网上充加密机63",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "网上充加密机64",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "消费加密机221",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "消费加密机230",
+      "status": 1,
+      "kind":1
+    }
+
+
+  ],
+  "switchs": [
+    {
+      "name": "接入点",
+      "status": 1
+    }
+
+  ],
+  "database": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "cpzl": [
+    {
+      "name": "清算加密机222",
+      "status": 1
+    },
+    {
+      "name": "清算加密机223",
+      "status": 1
+    },
+    {
+      "name": "清算加密机224",
+      "status": 1
+    },
+    {
+      "name": "清算加密机225",
+      "status": 1
+    },
+
+    {
+      "name": "二维码加密机226",
+      "status": 1
+    },
+    {
+      "name": "二维码加密机228",
+      "status": 1
+    },
+    {
+      "name": "消费加密机229",
+      "status": 1
+    },
+    {
+      "name": "清算加密机231",
+      "status": 1
+    },
+    {
+      "name": "住建部互联互通加密机56",
+      "status": 1
+    }
+
+  ],
+  "sujuku": [
+    {
+      "name": "发卡加密机200",
+      "status": 1
+    },
+
+    {
+      "name": "发卡加密机201",
+      "status": 1
+    },
+    {
+      "name": "发卡加密机202",
+      "status": 1
+    },
+
+    {
+      "name": "发卡加密机203",
+      "status": 1
+    }
+
+  ]
+}

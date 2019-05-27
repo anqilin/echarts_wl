@@ -1,0 +1,200 @@
+{
+  "compute": [
+    {
+      "name": "防火墙1",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "防火墙2",
+      "status": 1,
+      "msg":"报错了"
+    }
+
+
+  ],
+  "links": [
+    {
+      "flow": 1,
+      "source": "防火墙1",
+      "target": "接入交换机1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙2",
+      "target": "接入交换机2"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机1",
+      "target": "应用12"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机1",
+      "target": "应用14"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机1",
+      "target": "应用25"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机1",
+      "target": "应用27"
+    },
+
+    {
+      "flow": 1,
+      "source": "接入交换机2",
+      "target": "应用12"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机2",
+      "target": "应用14"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机2",
+      "target": "应用25"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机2",
+      "target": "应用27"
+    },
+
+    {
+      "flow": 1,
+      "source": "应用12",
+      "target": "数据库"
+    },
+    {
+      "flow": 1,
+      "source": "应用14",
+      "target": "数据库"
+    },
+    {
+      "flow": 1,
+      "source": "应用25",
+      "target": "数据库"
+    },
+    {
+      "flow": 1,
+      "source": "应用27",
+      "target": "数据库"
+    },
+    {
+      "flow": 1,
+      "source": "数据库",
+      "target": "备份数据库"
+    },
+    {
+      "flow": 1,
+      "source": "数据库",
+      "target": "清算生产数据库磁盘阵列1"
+    },
+    {
+      "flow": 1,
+      "source": "数据库",
+      "target": "清算生产数据库磁盘阵列2"
+    },
+    {
+      "flow": 1,
+      "source": "备份数据库",
+      "target": "清算备份数据库磁盘阵列"
+    },
+
+    {
+      "flow": 1,
+      "source": "数据库",
+      "target": "磁带库"
+    },
+    {
+      "flow": 1,
+      "source": "备份数据库",
+      "target": "磁带库"
+    }
+
+
+
+
+  ],
+  "storage": [
+    {
+      "name": "应用12",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "应用14",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "应用25",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "应用27",
+      "status": 1,
+      "kind":1
+    }
+
+
+  ],
+  "switchs": [
+    {
+      "name": "接入交换机1",
+      "status": 1
+    },
+    {
+      "name": "接入交换机2",
+      "status": 1
+    }
+  ],
+  "database": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "cpzl": [
+    {
+      "name": "清算生产数据库磁盘阵列1",
+      "status": 1
+    },
+    {
+      "name": "清算生产数据库磁盘阵列2",
+      "status": 1
+    },
+    {
+      "name": "清算备份数据库磁盘阵列",
+      "status": 1
+    },
+    {
+      "name": "磁带库",
+      "status": 1
+    }
+
+  ],
+  "sujuku": [
+    {
+      "name": "数据库",
+      "status": 1
+    },
+
+    {
+      "name": "备份数据库",
+      "status": 1
+    }
+
+  ]
+}

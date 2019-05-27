@@ -1,0 +1,107 @@
+{
+  "compute": [
+    {
+      "name": "接入交换机1",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "接入交换机2",
+      "status": 1,
+      "msg":"报错了"
+    }
+
+
+  ],
+  "links": [
+    {
+      "flow": 1,
+      "source": "接入交换机1",
+      "target": "加密机"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机1",
+      "target": "接入交换机2"
+    },
+    {
+      "flow": 1,
+      "source": "加密机",
+      "target": "灾备应用12"
+    },
+    {
+      "flow": 1,
+      "source": "加密机",
+      "target": "灾备应用14"
+    },
+    {
+      "flow": 1,
+      "source": "灾备应用12",
+      "target": "灾备数据库(主节点)"
+    },
+    {
+      "flow": 1,
+      "source": "灾备应用14",
+      "target": "灾备数据库(主节点)"
+    },
+    {
+      "flow": 1,
+      "source": "灾备数据库(主节点)",
+      "target": "灾备数据库(备节点)"
+    },
+    {
+      "flow": 1,
+      "source": "灾备数据库(主节点)",
+      "target": "清算灾备磁盘阵列"
+    }
+
+  ],
+  "storage": [
+    {
+      "name": "灾备应用12",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "灾备应用14",
+      "status": 1,
+      "kind":1
+    }
+
+
+  ],
+  "switchs": [
+    {
+      "name": "加密机",
+      "status": 1
+    }
+  ],
+  "database": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "cpzl": [
+    {
+      "name": "清算灾备磁盘阵列",
+      "status": 1
+    }
+
+  ],
+  "sujuku": [
+    {
+      "name": "灾备数据库(主节点)",
+      "status": 1
+    },
+    {
+      "name": "灾备数据库(备节点)",
+      "status": 1
+    }
+
+  ]
+}

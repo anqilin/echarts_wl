@@ -1,0 +1,471 @@
+{
+  "compute": [
+    {
+      "name": "防火墙247",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "防火墙248",
+      "status": 1,
+      "msg":"报错了"
+    }
+
+
+  ],
+  "links": [
+    {
+      "flow": 1,
+      "source": "防火墙247",
+      "target": "接入交换机1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙248",
+      "target": "接入交换机2"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机1",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机1",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机2",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机2",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "节点1"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "节点1"
+    },
+
+    {
+      "flow": 1,
+      "source": "节点1",
+      "target": "认证A"
+    },
+    {
+      "flow": 1,
+      "source": "节点1",
+      "target": "认证B"
+    },
+    {
+      "flow": 1,
+      "source": "节点1",
+      "target": "认证C"
+    },
+    {
+      "flow": 1,
+      "source": "节点1",
+      "target": "发行A"
+    },
+    {
+      "flow": 1,
+      "source": "节点1",
+      "target": "发行B"
+    },
+    {
+      "flow": 1,
+      "source": "节点1",
+      "target": "发行C"
+    },
+    {
+      "flow": 1,
+      "source": "节点1",
+      "target": "清算A"
+    },
+    {
+      "flow": 1,
+      "source": "节点1",
+      "target": "清算B"
+    },
+    {
+      "flow": 1,
+      "source": "节点1",
+      "target": "开发"
+    },
+    {
+      "flow": 1,
+      "source": "节点1",
+      "target": "历史查询"
+    },
+    {
+      "flow": 1,
+      "source": "节点1",
+      "target": "测试6"
+    },
+    {
+      "flow": 1,
+      "source": "节点1",
+      "target": "测试17"
+    },
+
+    {
+      "flow": 1,
+      "source": "节点1",
+      "target": "交通卡监控报警"
+    },
+
+    {
+      "flow": 1,
+      "source": "认证A",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "认证B",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "认证C",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "发行A",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "发行B",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "发行C",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "清算A",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "清算B",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "开发",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "历史查询",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "测试6",
+      "target": "节点2"
+    },
+    {
+      "flow": 1,
+      "source": "测试17",
+      "target": "节点2"
+    },
+
+
+    {
+      "flow": 1,
+      "source": "节点2",
+      "target": "数据库(主节点)"
+    },
+    {
+      "flow": 1,
+      "source": "节点2",
+      "target": "数据库(备节点)"
+    },
+    {
+      "flow": 1,
+      "source": "节点2",
+      "target": "历史库"
+    },
+    {
+      "flow": 1,
+      "source": "节点2",
+      "target": "SVN"
+    },
+    {
+      "flow": 1,
+      "source": "节点2",
+      "target": "开发61"
+    },
+    {
+      "flow": 1,
+      "source": "节点2",
+      "target": "开发62"
+    },
+
+    {
+      "flow": 1,
+      "source": "节点2",
+      "target": "网闸"
+    },
+    {
+      "flow": 1,
+      "source": "节点2",
+      "target": "ETC加密机"
+    },
+
+    {
+      "flow": 1,
+      "source": "数据库(主节点)",
+      "target": "ETC生产数据库磁盘阵列"
+    },
+    {
+      "flow": 1,
+      "source": "数据库(主节点)",
+      "target": "ETC本地容灾数据库磁盘阵列"
+    },
+    {
+      "flow": 1,
+      "source": "数据库(备节点)",
+      "target": "ETC生产数据库磁盘阵列"
+    },
+    {
+      "flow": 1,
+      "source": "数据库(备节点)",
+      "target": "ETC本地容灾数据库磁盘阵列"
+    },
+
+    {
+      "flow": 1,
+      "source": "历史库",
+      "target": "ETC历史数据库磁盘阵列"
+    },
+    {
+      "flow": 1,
+      "source": "开发61",
+      "target": "ETC开发测试磁盘阵列"
+    },
+    {
+      "flow": 1,
+      "source": "网闸",
+      "target": "网站HUB"
+    },
+    {
+      "flow": 1,
+      "source": "网站HUB",
+      "target": "网站webserver"
+    },
+    {
+      "flow": 1,
+      "source": "网站HUB",
+      "target": "网站webapp"
+    },
+    {
+      "flow": 1,
+      "source": "网站webserver",
+      "target": "网站数据库"
+    },
+    {
+      "flow": 1,
+      "source": "网站webapp",
+      "target": "网站数据库"
+    }
+
+
+  ],
+  "storage": [
+    {
+      "name": "认证A",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "认证B",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "认证C",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "发行A",
+      "status": 1,
+      "kind":1
+    },
+
+    {
+      "name": "发行B",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "发行C",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "清算A",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "清算B",
+      "status": 1,
+      "kind":1
+    },
+
+    {
+      "name": "开发",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "历史查询",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "测试6",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "测试17",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "交通卡监控报警",
+      "status": 1,
+      "kind":1
+    }
+
+
+  ],
+  "switchs": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "jhj": [
+    {
+      "name": "接入交换机1",
+      "status": 1
+    },
+    {
+      "name": "接入交换机2",
+      "status": 1
+    }
+  ],
+  "database": [
+    {
+      "name": "节点1",
+      "status": 1
+    },
+    {
+      "name": "节点2",
+      "status": 1
+    }
+  ],
+  "cpzl": [
+    {
+      "name": "ETC生产数据库磁盘阵列",
+      "status": 1
+    },
+    {
+      "name": "ETC历史数据库磁盘阵列",
+      "status": 1
+    },
+    {
+      "name": "ETC本地容灾数据库磁盘阵列",
+      "status": 1
+    },
+    {
+      "name": "ETC开发测试磁盘阵列",
+      "status": 1
+    },
+    {
+      "name": "网站HUB",
+      "status": 1
+    }
+
+  ],
+  "web": [
+    {
+      "name": "网站webserver",
+      "status": 1
+    },
+    {
+      "name": "网站webapp",
+      "status": 1
+    },
+    {
+      "name": "网站数据库",
+      "status": 1
+    }
+
+  ],
+  "sujuku": [
+    {
+      "name": "数据库(主节点)",
+      "status": 1,
+      "kind": 2
+    },
+    {
+      "name": "数据库(备节点)",
+      "status": 1,
+      "kind": 2
+    },
+
+    {
+      "name": "历史库",
+      "status": 1,
+      "kind": 2
+    },
+    {
+      "name": "SVN",
+      "status": 1,
+      "kind": 1
+    },
+    {
+      "name": "开发61",
+      "status": 1,
+      "kind": 3
+    },
+    {
+      "name": "开发62",
+      "status": 1,
+      "kind": 3
+    },
+    {
+      "name": "ETC加密机",
+      "status": 1,
+      "kind": 4
+    },
+    {
+      "name": "网闸",
+      "status": 1,
+      "kind": 5
+    }
+
+  ]
+}
