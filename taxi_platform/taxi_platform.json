@@ -1,0 +1,194 @@
+{
+  "compute": [
+    {
+      "name": "防火墙250",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "防火墙251",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "防火墙252",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "防火墙253",
+      "status": 1,
+      "msg":"报错了"
+    }
+
+
+  ],
+  "links": [
+    {
+      "flow": 1,
+      "source": "防火墙250",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙250",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙251",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙251",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙252",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙252",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙253",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙253",
+      "target": "负载均衡2"
+    },
+
+
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "出租APP91"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "出租APP92"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "出租APP93"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "出租APP91"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "出租APP92"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "出租APP93"
+    },
+    {
+      "flow": 1,
+      "source": "出租APP91",
+      "target": "出租平台数据库"
+    },
+    {
+      "flow": 1,
+      "source": "出租APP92",
+      "target": "出租平台数据库"
+    },
+    {
+      "flow": 1,
+      "source": "出租APP93",
+      "target": "出租平台数据库"
+    },
+    {
+      "flow": 1,
+      "source": "出租APP91",
+      "target": "内部防火墙"
+    },
+    {
+      "flow": 1,
+      "source": "出租APP92",
+      "target": "内部防火墙"
+    },
+    {
+      "flow": 1,
+      "source": "出租APP93",
+      "target": "内部防火墙"
+    },
+    {
+      "flow": 1,
+      "source": "出租平台数据库",
+      "target": "云平台磁盘阵列"
+    }
+
+
+  ],
+  "storage": [
+    {
+      "name": "出租APP91",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "出租APP92",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "出租APP93",
+      "status": 1,
+      "kind":1
+    }
+
+
+  ],
+  "switchs": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "database": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "cpzl": [
+    {
+      "name": "云平台磁盘阵列",
+      "status": 1
+    }
+
+  ],
+  "sujuku": [
+    {
+      "name": "出租平台数据库",
+      "status": 1
+    },
+    {
+      "name": "内部防火墙",
+      "status": 1
+    }
+
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "compute": [
+    {
+      "name": "防火墙250",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "防火墙251",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "防火墙252",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "防火墙253",
+      "status": 1,
+      "msg":"报错了"
+    }
+
+
+  ],
+  "links": [
+    {
+      "flow": 1,
+      "source": "防火墙250",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙250",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙251",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙251",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙252",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙252",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙253",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙253",
+      "target": "负载均衡2"
+    },
+
+
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "停车APP61"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "停车APP62"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "停车APP63"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "停车APP64"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "停车APP65"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "停车APP66"
+    },
+
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "停车APP61"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "停车APP62"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "停车APP63"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "停车APP64"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "停车APP65"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "停车APP66"
+    },
+
+    {
+      "flow": 1,
+      "source": "停车APP61",
+      "target": "停车平台数据库"
+    },
+    {
+      "flow": 1,
+      "source": "停车APP62",
+      "target": "停车平台数据库"
+    },
+    {
+      "flow": 1,
+      "source": "停车APP63",
+      "target": "停车平台数据库"
+    },
+    {
+      "flow": 1,
+      "source": "停车APP64",
+      "target": "停车平台数据库"
+    },
+    {
+      "flow": 1,
+      "source": "停车APP65",
+      "target": "停车平台数据库"
+    },
+    {
+      "flow": 1,
+      "source": "停车APP66",
+      "target": "停车平台数据库"
+    },
+
+    {
+      "flow": 1,
+      "source": "停车APP61",
+      "target": "内部防火墙"
+    },
+    {
+      "flow": 1,
+      "source": "停车APP62",
+      "target": "内部防火墙"
+    },
+    {
+      "flow": 1,
+      "source": "停车APP63",
+      "target": "内部防火墙"
+    },
+    {
+      "flow": 1,
+      "source": "停车APP64",
+      "target": "内部防火墙"
+    },
+    {
+      "flow": 1,
+      "source": "停车APP65",
+      "target": "内部防火墙"
+    },
+    {
+      "flow": 1,
+      "source": "停车APP66",
+      "target": "内部防火墙"
+    },
+
+    {
+      "flow": 1,
+      "source": "停车平台数据库",
+      "target": "云平台磁盘阵列"
+    }
+
+
+  ],
+  "storage": [
+    {
+      "name": "停车APP61",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "停车APP62",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "停车APP63",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "停车APP64",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "停车APP65",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "停车APP66",
+      "status": 1,
+      "kind":1
+    }
+
+
+  ],
+  "switchs": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "database": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "cpzl": [
+    {
+      "name": "云平台磁盘阵列",
+      "status": 1
+    }
+
+  ],
+  "sujuku": [
+    {
+      "name": "停车平台数据库",
+      "status": 1
+    },
+    {
+      "name": "内部防火墙",
+      "status": 1
+    }
+
+  ]
+}

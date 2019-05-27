@@ -1,0 +1,280 @@
+{
+  "compute": [
+    {
+      "name": "接入交换机",
+      "status": 1,
+      "msg":"报错了"
+    }
+
+
+  ],
+  "links": [
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "审计应用"
+    },
+
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "Hadoop170"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "Hadoop171"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "Hadoop172"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "Hadoop173"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "Vertica174"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "Vertica175"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "Vertica176"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "大数据测试177"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "BIEE210"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "Information应用212"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "数据下发111"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "Essbase89"
+    },
+    {
+      "flow": 1,
+      "source": "接入交换机",
+      "target": "Informatic资料库"
+    },
+
+
+    {
+      "flow": 1,
+      "source": "Hadoop170",
+      "target": "数据仓库数据库"
+    },
+    {
+      "flow": 1,
+      "source": "Hadoop171",
+      "target": "数据仓库数据库"
+    },
+    {
+      "flow": 1,
+      "source": "Hadoop172",
+      "target": "数据仓库数据库"
+    },
+    {
+      "flow": 1,
+      "source": "Hadoop173",
+      "target": "数据仓库数据库"
+    },
+    {
+      "flow": 1,
+      "source": "Vertica174",
+      "target": "数据仓库数据库"
+    },
+    {
+      "flow": 1,
+      "source": "Vertica175",
+      "target": "数据仓库数据库"
+    },
+    {
+      "flow": 1,
+      "source": "Vertica176",
+      "target": "数据仓库数据库"
+    },
+    {
+      "flow": 1,
+      "source": "大数据测试177",
+      "target": "数据仓库数据库"
+    },
+    {
+      "flow": 1,
+      "source": "BIEE210",
+      "target": "数据仓库数据库"
+    },
+    {
+      "flow": 1,
+      "source": "Information应用212",
+      "target": "数据仓库数据库"
+    },
+    {
+      "flow": 1,
+      "source": "数据下发111",
+      "target": "数据仓库数据库"
+    },
+    {
+      "flow": 1,
+      "source": "Essbase89",
+      "target": "数据仓库数据库"
+    },
+    {
+      "flow": 1,
+      "source": "Informatic资料库",
+      "target": "数据仓库数据库"
+    },
+
+    {
+      "flow": 1,
+      "source": "数据仓库数据库",
+      "target": "数据仓库磁盘阵列1"
+    },
+    {
+      "flow": 1,
+      "source": "数据仓库数据库",
+      "target": "数据仓库磁盘阵列2"
+    },
+    {
+      "flow": 1,
+      "source": "数据仓库磁盘阵列1",
+      "target": "接入交换机2"
+    },
+    {
+      "flow": 1,
+      "source": "数据仓库磁盘阵列2",
+      "target": "接入交换机2"
+    }
+
+
+  ],
+  "storage": [
+    {
+      "name": "Hadoop170",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "Hadoop171",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "Hadoop172",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "Hadoop173",
+      "status": 1,
+      "kind":1
+    },
+
+    {
+      "name": "Vertica174",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "Vertica175",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "Vertica176",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "大数据测试177",
+      "status": 1,
+      "kind":1
+    },
+
+    {
+      "name": "BIEE210",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "Information应用212",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "数据下发111",
+      "status": 1,
+      "kind":1
+    },
+
+    {
+      "name": "Essbase89",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "Informatic资料库",
+      "status": 1,
+      "kind":1
+    }
+
+
+  ],
+  "switchs": [
+    {
+      "name": "接入交换机2",
+      "status": 1
+    }
+  ],
+  "database": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "cpzl": [
+    {
+      "name": "数据仓库磁盘阵列1",
+      "status": 1
+    },
+    {
+      "name": "数据仓库磁盘阵列2",
+      "status": 1
+    }
+
+  ],
+  "sujuku": [
+    {
+      "name": "数据仓库数据库",
+      "status": 1
+    }
+
+  ]
+}

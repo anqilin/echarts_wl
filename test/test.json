@@ -1,0 +1,52 @@
+{
+  "nodes": [
+    {
+      "name": "防火墙",
+      "status": 1,
+      "msg":"报错了",
+      "pic": "image://images/img_junhen_1.png",
+      "pic_name": "image://images/img_junhen_2.png",
+      "x": 100,
+      "y": 200
+    },
+    {
+      "name": "网上充前置11",
+      "status": 1,
+      "msg":"报错了",
+      "pic": "image://images/img_junhen_1.png",
+      "pic_name": "image://images/img_junhen_2.png",
+      "x": 100,
+      "y": 300
+    },
+    {
+      "name": "网上充前置12",
+      "status": 1,
+      "msg":"报错了",
+      "pic": "image://images/img_junhen_1.png",
+      "pic_name": "image://images/img_junhen_2.png",
+      "x": 300,
+      "y": 300
+
+    }
+
+  ],
+  "links": [
+    {
+      "flow": 1,
+      "source": "防火墙",
+      "target": "网上充前置11"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙",
+      "target": "网上充前置12"
+    }
+
+
+
+
+  ]
+
+
+
+}

@@ -1,0 +1,236 @@
+{
+  "compute": [
+    {
+      "name": "防火墙250",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "防火墙251",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "防火墙252",
+      "status": 1,
+      "msg":"报错了"
+    },
+    {
+      "name": "防火墙253",
+      "status": 1,
+      "msg":"报错了"
+    }
+
+
+  ],
+  "links": [
+    {
+      "flow": 1,
+      "source": "防火墙250",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙250",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙251",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙251",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙252",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙252",
+      "target": "负载均衡2"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙253",
+      "target": "负载均衡1"
+    },
+    {
+      "flow": 1,
+      "source": "防火墙253",
+      "target": "负载均衡2"
+    },
+
+
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "手机APP(旧版)11"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "手机APP(旧版)12"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "手机APP(旧版)13"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "测试14"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "手机APP(旧版)15"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡1",
+      "target": "手机APP(旧版)16"
+    },
+
+
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "手机APP(旧版)11"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "手机APP(旧版)12"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "手机APP(旧版)13"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "测试14"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "手机APP(旧版)15"
+    },
+    {
+      "flow": 1,
+      "source": "负载均衡2",
+      "target": "手机APP(旧版)16"
+    },
+
+
+
+    {
+      "flow": 1,
+      "source": "手机APP(旧版)11",
+      "target": "内部防火墙"
+    },
+    {
+      "flow": 1,
+      "source": "手机APP(旧版)12",
+      "target": "内部防火墙"
+    },
+    {
+      "flow": 1,
+      "source": "手机APP(旧版)13",
+      "target": "内部防火墙"
+    },
+    {
+      "flow": 1,
+      "source": "测试14",
+      "target": "内部防火墙"
+    },
+    {
+      "flow": 1,
+      "source": "手机APP(旧版)15",
+      "target": "内部防火墙"
+    },
+    {
+      "flow": 1,
+      "source": "手机APP(旧版)16",
+      "target": "内部防火墙"
+    }
+
+
+
+  ],
+  "storage": [
+    {
+      "name": "手机APP(旧版)11",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "手机APP(旧版)12",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "手机APP(旧版)13",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "测试14",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "手机APP(旧版)15",
+      "status": 1,
+      "kind":1
+    },
+    {
+      "name": "手机APP(旧版)16",
+      "status": 1,
+      "kind":1
+    }
+
+  ],
+  "switchs": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "database": [
+    {
+      "name": "负载均衡1",
+      "status": 1
+    },
+    {
+      "name": "负载均衡2",
+      "status": 1
+    }
+  ],
+  "cpzl": [
+    {
+      "name": "云平台磁盘阵列",
+      "status": 1
+    }
+
+  ],
+  "sujuku": [
+
+    {
+      "name": "内部防火墙",
+      "status": 1
+    }
+
+  ]
+}
